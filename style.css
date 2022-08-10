@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Mouse+Memoirs&family=Open+Sans:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500;1,600;1,700;1,800&family=Roboto:ital,wght@0,100;0,300;0,400;1,100;1,300;1,700&display=swap');
+
+body {
+    font-family: 'Roboto', sans-serif;
+    
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    
+    
+    
+
+}
+
+/* Category Section */
+
+.mainbody {
+    display: flex;
+    height: 100vh;
+    
+    
+}
+
+.category{
+    display: flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items: stretch;
+    margin-bottom: 2px;
+}
+
+
+
+.sidebar {
+    padding:20px;
+    justify-content: center;
+    align-items: stretch;
+    cursor: pointer;
+    flex-basis: auto;
+    height: 100vh;
+     width: calc(100% - 990px);
+    background-color:white;
+    border-right: 1px solid black;
+    
+}
+
+.categorybird  {
+    display: flex;
+    font-size: 20px;
+    font-weight: 400;
+    margin-right: 20px;
+    padding: 12px;
+}
+
+.categorybird >i {
+    font-size: 25px;
+    margin-right: 20px;
+   
+}
+
+.category :hover {
+    background-color: brown;
+    border-radius: 9999px;
+    
+    
+}
+ .logo >img{
+    height: 25px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    display: flex;
+
+}
+ 
+button {
+    border-radius: 9999px;
+    padding-left: 32px;
+    padding-right: 32px;
+    min-width:  200px;
+    min-height: 52px;
+    border: none;
+    background-color: blue;
+    cursor: pointer;
+    margin-bottom: 70px;
+    margin-top: 4px;
+}
+.btn-blue {
+    font-size: 19px;
+    font-weight: 700;
+    color: white;
+}
+
+.account-details {
+    margin-top: 14px;
+    margin-bottom: 14px;
+    padding: 12px;
+    cursor: pointer;
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.profile >i {
+    font-size: 25px;
+    margin-right: 20px;
+
+}
+.profile {
+    display: flex;
+    font-size: 20px;
+    font-weight: 400;
+    margin-top: 10px;
+   
+}
+
+.account-details :hover{
+    background-color:brown;
+    border-radius: 9999px;
+}
+
+/* TimeLine */
+.timeline {
+    width: 990px;
+    background-color:lightslategray;
+    
+}
+
+
+
+
+
