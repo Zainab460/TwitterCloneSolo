@@ -1,7 +1,7 @@
-@import url('https://fonts.googleapis.com/css2?family=Mouse+Memoirs&family=Open+Sans:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500;1,600;1,700;1,800&family=Roboto:ital,wght@0,100;0,300;0,400;1,100;1,300;1,700&display=swap');
 
+@import url('https://fonts.googleapis.com/css2?family=Mouse+Memoirs&family=Open+Sans:ital,wght@0,300;1,300&family=Roboto:ital,wght@0,100;0,300;0,400;1,100;1,300;1,700&display=swap');
 body {
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Open Sans', sans-serif;
     
 }
 
@@ -10,10 +10,6 @@ body {
     margin: 0;
     padding: 0;
     position: relative;
-    
-    
-    
-
 }
 
 /* Category Section */
@@ -21,8 +17,7 @@ body {
 .mainbody {
     display: flex;
     height: 100vh;
-    
-    
+    width: 100vw;
 }
 
 .category{
@@ -33,59 +28,64 @@ body {
     margin-bottom: 2px;
 }
 
-
-
 .sidebar {
-    padding:20px;
+    padding-left: 12px;
+    margin-left: 20px;
     justify-content: center;
     align-items: stretch;
     cursor: pointer;
     flex-basis: auto;
     height: 100vh;
-     width: calc(100% - 990px);
+    width:300px;
+    /* width: calc(100vw - 1032px); */
     background-color:white;
-    border-right: 1px solid black;
+    border-right: 1px solid grey;
+    top: 0px;
+    overflow-y: hidden;
     
 }
 
 .categorybird  {
     display: flex;
+    align-items: center;
+    flex-direction: row;
     font-size: 20px;
-    font-weight: 400;
-    margin-right: 20px;
+    font-weight: 500;
     padding: 12px;
 }
 
 .categorybird >i {
     font-size: 25px;
     margin-right: 20px;
-   
 }
 
 .category :hover {
-    background-color: brown;
+    background-color:lightgray;
     border-radius: 9999px;
-    
-    
 }
+
  .logo >img{
+    display: flex;
     height: 25px;
     padding-top: 2px;
     padding-bottom: 2px;
-    display: flex;
-
+    margin-top: 15px;
+    margin-left: 10px;
+    margin-bottom: 15px;
+    margin-right: 0;
 }
  
+/* TWEET BUTTON */
 button {
     border-radius: 9999px;
     padding-left: 32px;
     padding-right: 32px;
-    min-width:  200px;
+    min-width:  250px;
     min-height: 52px;
     border: none;
-    background-color: blue;
+    background-color:rgb(29 155 240);
     cursor: pointer;
-    margin-bottom: 70px;
+    margin-bottom: 4px;
     margin-top: 4px;
 }
 .btn-blue {
@@ -94,6 +94,10 @@ button {
     color: white;
 }
 
+.tweet-button {
+    padding-bottom: 70px;
+}
+/* ACCOUNT PROFILE */
 .account-details {
     margin-top: 14px;
     margin-bottom: 14px;
@@ -112,22 +116,69 @@ button {
     display: flex;
     font-size: 20px;
     font-weight: 400;
-    margin-top: 10px;
-   
 }
 
 .account-details :hover{
-    background-color:brown;
+    background-color:lightgray;
     border-radius: 9999px;
 }
 
 /* TimeLine */
-.timeline {
-    width: 990px;
+.main-container {
+    width: calc(100vw - 300px);
     background-color:lightslategray;
+    
+
+}
+.timeline {
+    max-width: 600px;
+    border-right: 1px solid black;
+    cursor: pointer;
+    padding-left: 16px;
+    padding-right: 16px;
+}
+
+.tweet-feed {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 5px;
     
 }
 
+h2 {
+    font-size: 20px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    font-weight: 700;
+    
+}
+
+.star >i {
+    font-size: 25px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+   
+}
+
+.star :hover {
+    background-color: lightgray;
+    border-radius: 9999px;
+    padding-left: 1px;
+    padding-right: 1px;
+
+}
+
+.translateKey {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.profileKey >i {
+    font-size: 35px;
+    margin-top: 4px;
+    padding-right: 12px;
+}
 
 
 
