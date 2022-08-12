@@ -18,6 +18,7 @@ body {
     display: flex;
     height: 100vh;
     width: 100vw;
+    overflow-x: hidden;
 }
 
 .category{
@@ -39,7 +40,7 @@ body {
     width:300px;
     /* width: calc(100vw - 1032px); */
     background-color:white;
-    border-right: 1px solid grey;
+    border-right: 1px solid lightgrey;
     top: 0px;
     overflow-y: hidden;
     
@@ -126,13 +127,13 @@ button {
 /* TimeLine */
 .main-container {
     width: calc(100vw - 300px);
-    background-color:lightslategray;
+    background-color:white;
     
 
 }
 .timeline {
     max-width: 600px;
-    border-right: 1px solid black;
+    border-right: 1px solid lightgrey;
     cursor: pointer;
     padding-left: 16px;
     padding-right: 16px;
@@ -142,6 +143,7 @@ button {
     display: flex;
     justify-content: space-between;
     padding-top: 5px;
+    padding-bottom: 15px;
     
 }
 
@@ -154,7 +156,7 @@ h2 {
 }
 
 .star >i {
-    font-size: 25px;
+    font-size: 22px;
     padding-top: 2px;
     padding-bottom: 2px;
    
@@ -172,13 +174,91 @@ h2 {
     display: flex;
     flex-direction: row;
     align-items: center;
+    padding-top: 4px;
+    padding-bottom: 4px;
+   
+}
+.acc-search {
+    display: flex;
+    align-items: center;
+   
+}
+input {
+    border:none;
+    border: 4px;
+    font-size: 20px;
+    font-weight: 400;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    cursor: text;
+    outline: none;
+    line-height: 24px;
+    overflow: hidden
+    
 }
 
 .profileKey >i {
-    font-size: 35px;
+    font-size: 40px;
     margin-top: 4px;
     padding-right: 12px;
 }
+
+.options {
+    padding-left: 52px;
+}
+.toolbar {
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+    flex-direction: row;
+    margin-right: 2px;
+    margin-left: 2px;
+    color:rgb(29 155 240);
+    padding-bottom: 10px;
+   
+}
+
+
+.t-icons >i {
+    font-size: 20px;
+    font-weight: 500;
+    padding: 5px;
+    margin-bottom: 10px;
+}
+
+.twit-button > button {
+    min-height: 32px;
+    min-width: 32px;
+}
+
+.small-btn {
+    font-size: 15px;
+    font-weight: 700;
+    color: white;
+}
+
+.border {
+    border-bottom: 1px solid lightgrey;
+
+}
+/* POSTS */
+
+.posts >img {
+    z-index: 1;
+    height: 350px;
+    width: 570px;
+    position: relative;
+    border-radius: 20px;
+    flex-wrap: pre-wrap;
+    
+}
+
+.tweets {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
 
 
 
