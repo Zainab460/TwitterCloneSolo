@@ -257,7 +257,33 @@ input {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    padding-bottom: 10px;
+    padding-top: 10px;
 }
+.personal-acc {
+    display: flex;
+    justify-content: center;
+}
+
+.diff-acc >i {
+    font-size: 30px;
+    padding-right: 12px;
+}
+.name {
+    font-size: 15px;
+    font-weight: 700;
+}
+.tick >i {
+    font-size: 15px;
+    font-weight: 400;
+    margin-left: 2px;
+    height: 1.25em;
+    color: rgb(29 155 240);
+}
+.more  {
+    font-size: 1px;
+}
+
 
 
 
