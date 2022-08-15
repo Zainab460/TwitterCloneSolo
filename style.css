@@ -10,6 +10,7 @@ body {
     margin: 0;
     padding: 0;
     position: relative;
+    
 }
 
 /* Category Section */
@@ -19,6 +20,7 @@ body {
     height: 100vh;
     width: 100vw;
     overflow-x: hidden;
+    
 }
 
 .category{
@@ -37,12 +39,12 @@ body {
     cursor: pointer;
     flex-basis: auto;
     height: 100vh;
-    width:300px;
-    /* width: calc(100vw - 1032px); */
+    width: calc(100vw - 990px);
     background-color:white;
     border-right: 1px solid lightgrey;
     top: 0px;
     overflow-y: hidden;
+    position: sticky;
     
 }
 
@@ -53,6 +55,12 @@ body {
     font-size: 20px;
     font-weight: 500;
     padding: 12px;
+}
+.active {
+    font-weight: 900;
+}
+.active i{
+    color: black;
 }
 
 .categorybird >i {
@@ -126,17 +134,22 @@ button {
 
 /* TimeLine */
 .main-container {
-    width: calc(100vw - 300px);
+    width: 660px;
+    height:100vh;
     background-color:white;
+    flex-direction: row;
+    
+    
     
 
 }
 .timeline {
-    max-width: 600px;
-    border-right: 1px solid lightgrey;
+    height: 100vh;
     cursor: pointer;
     padding-left: 16px;
     padding-right: 16px;
+    
+    
 }
 
 .tweet-feed {
@@ -144,6 +157,9 @@ button {
     justify-content: space-between;
     padding-top: 5px;
     padding-bottom: 15px;
+    position: sticky;
+    top: 0;
+    background-color: white;
     
 }
 
@@ -239,14 +255,14 @@ input {
 
 .border {
     border-bottom: 1px solid lightgrey;
-
+    
 }
 /* POSTS */
 
 .posts >img {
     z-index: 1;
     height: 350px;
-    width: 570px;
+    width: 550px;
     position: relative;
     border-radius: 20px;
     flex-wrap: pre-wrap;
@@ -266,7 +282,7 @@ input {
 }
 
 .diff-acc >i {
-    font-size: 30px;
+    font-size: 20px;
     padding-right: 12px;
 }
 .name {
@@ -280,9 +296,149 @@ input {
     height: 1.25em;
     color: rgb(29 155 240);
 }
-.more  {
-    font-size: 1px;
+.grey-area {
+    color:gray;
+    font-weight: 700;
+    font-size: 15px;
 }
+.more >i {
+    color:lightgrey;
+    font-weight: 700;
+    font-size: 20px
+}
+.footer-icons {
+    display: flex;
+    justify-content: space-between;
+    font-size: 13px;
+    font-weight: 400;
+    color: grey;
+    padding-bottom: 10px;
+}
+.foot :hover{
+    background-color: lightgrey;
+    border-radius: 9999px;
+}
+.foot >i {
+    font-size: 20px;
+}
+/* TRENDS SEARCHBAR */
+.trends{
+    justify-content: center;
+    align-items: center;
+    width:360px;
+    padding: 25px;
+    padding-left: 10px; 
+    position: relative;
+    
+    
+}
+.searchbar {
+    display: flex;
+    padding-top: 10px;
+    padding-left: 20px;
+    margin-bottom: 12px;
+    
+}
+.search{
+    display: flex;
+    border-radius: 1000px;
+    border: 1px solid #eff3f4;
+    background-color: #eff3f4;
+    width: 300px;
+
+}
+
+
+.search >button {
+    padding: 5px;
+    padding-left: 12px;
+    background-color: #eff3f4;
+    min-width:  0;
+    min-height: 0;
+    border: none;
+}
+.search >input {
+    background-color:  #eff3f4;
+    font-size: 15px;
+    font-weight: 400;
+    padding: 12px;
+    
+}
+.s-icon >i {
+    color:rgb(83 100 113);
+}
+
+.location {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+p {
+    font-size: 13px;
+    font-weight: 400;
+    color: rgb(83 100 113);
+}
+.trendy >i {
+    font-size: 20px;
+    font-weight: 400;
+    color: rgb(83 100 113);
+}
+h2 {
+    font-size: 25px;
+    font-weight: 800;
+    color: black;
+}
+h3 {
+    font-size: 15px;
+    font-weight: 700;
+    color: black;
+}
+.amot {
+    font-size: 13px;
+    font-weight: 400;
+    color:grey;
+}
+.greyout{
+    border: 1px solid #eff3f4;
+    background-color: #eff3f4;
+    border-radius: 20px;
+
+}
+.whitespace{
+    padding-bottom: 100px;
+    padding-left: 20px;
+    position: relative;
+}
+.wordstogether :hover {
+    background-color:lightgrey;
+    border-radius:10px;
+}
+.trends-for-me {
+    cursor: pointer;
+    padding-left: 10px;
+}
+
+/* footer */
+.categories-footer {
+    font-size: 11px;
+    font-weight: 500;
+    cursor: pointer;
+    color :rgb(83, 100, 113);
+    position: relative;
+    padding-left: 30px;
+    
+}
+.footer-section span {
+    padding-right: 12px;
+    padding: 10px;
+}
+.bodyborder{
+    border-left: 1px solid lightgrey;
+}
+
+
+
+
 
 
 
