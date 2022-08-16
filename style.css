@@ -1,15 +1,21 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Mouse+Memoirs&family=Open+Sans:ital,wght@0,300;1,300&family=Roboto:ital,wght@0,100;0,300;0,400;1,100;1,300;1,700&display=swap');
+
 body {
     font-family: 'Open Sans', sans-serif;
+    height: 100vh;
+    width:100vw;
+    overflow-x: hidden;
+    
     
 }
 
 *{
-    box-sizing: border-box;
+    
     margin: 0;
-    padding: 0;
-    position: relative;
+    padding: 0 10px;
+    box-sizing: border-box;
+
     
 }
 
@@ -17,12 +23,10 @@ body {
 
 .mainbody {
     display: flex;
-    height: 100vh;
-    width: 100vw;
-    overflow-x: hidden;
     
 }
 
+/* sidebar */
 .category{
     display: flex;
     flex-direction:column;
@@ -32,19 +36,17 @@ body {
 }
 
 .sidebar {
-    padding-left: 12px;
-    margin-left: 20px;
     justify-content: center;
-    align-items: stretch;
+    align-items: center;
+    padding: 0 20px;
+    margin-top: 20px;
     cursor: pointer;
-    flex-basis: auto;
     height: 100vh;
-    width: calc(100vw - 990px);
-    background-color:white;
-    border-right: 1px solid lightgrey;
-    top: 0px;
+    width:100vw;
     overflow-y: hidden;
-    position: sticky;
+    position:sticky;
+    top: 0px;
+    border-right: 1px solid lightgrey;
     
 }
 
@@ -52,8 +54,8 @@ body {
     display: flex;
     align-items: center;
     flex-direction: row;
-    font-size: 20px;
-    font-weight: 500;
+    font-size: 17px;
+    font-weight: 600;
     padding: 12px;
 }
 .active {
@@ -64,13 +66,13 @@ body {
 }
 
 .categorybird >i {
-    font-size: 25px;
-    margin-right: 20px;
+    font-size: 20px;
+    padding-right: 20px;
 }
 
 .category :hover {
     background-color:lightgray;
-    border-radius: 9999px;
+    border-radius: 30px;
 }
 
  .logo >img{
@@ -78,33 +80,20 @@ body {
     height: 25px;
     padding-top: 2px;
     padding-bottom: 2px;
-    margin-top: 15px;
-    margin-left: 10px;
-    margin-bottom: 15px;
-    margin-right: 0;
+    
 }
  
 /* TWEET BUTTON */
-button {
-    border-radius: 9999px;
-    padding-left: 32px;
-    padding-right: 32px;
-    min-width:  250px;
-    min-height: 52px;
-    border: none;
-    background-color:rgb(29 155 240);
-    cursor: pointer;
-    margin-bottom: 4px;
-    margin-top: 4px;
-}
 .btn-blue {
-    font-size: 19px;
-    font-weight: 700;
+    width: 100%;
+    background-color: rgb(29 155 240);
+    border: none;
+    border-radius: 30px;
     color: white;
-}
-
-.tweet-button {
-    padding-bottom: 70px;
+    font-weight: 900;
+    font-size: 17px;
+    height: 50px;
+    margin-top: 20px;
 }
 /* ACCOUNT PROFILE */
 .account-details {
@@ -117,14 +106,14 @@ button {
 }
 
 .profile >i {
-    font-size: 25px;
-    margin-right: 20px;
+    font-size: 20px;
+    padding-right: 20px;
 
 }
 .profile {
     display: flex;
-    font-size: 20px;
-    font-weight: 400;
+    font-size: 17px;
+    font-weight: 600;
 }
 
 .account-details :hover{
@@ -134,31 +123,27 @@ button {
 
 /* TimeLine */
 .main-container {
-    width: 660px;
-    height:100vh;
+    width:990px;
     background-color:white;
     flex-direction: row;
-    
-    
-    
-
-}
-.timeline {
-    height: 100vh;
     cursor: pointer;
     padding-left: 16px;
     padding-right: 16px;
-    
-    
+    border-right: 1px solid lightgrey;
+}
+.post-tweet {
+    border-bottom: 1px solid lightgrey;
+
+
 }
 
 .tweet-feed {
     display: flex;
     justify-content: space-between;
-    padding-top: 5px;
-    padding-bottom: 15px;
+    padding: 15px 20px;
     position: sticky;
     top: 0;
+    z-index: 100;
     background-color: white;
     
 }
@@ -192,6 +177,8 @@ h2 {
     align-items: center;
     padding-top: 4px;
     padding-bottom: 4px;
+    
+   
    
 }
 .acc-search {
@@ -208,7 +195,6 @@ input {
     padding-bottom: 2px;
     cursor: text;
     outline: none;
-    line-height: 24px;
     overflow: hidden
     
 }
@@ -231,6 +217,8 @@ input {
     margin-left: 2px;
     color:rgb(29 155 240);
     padding-bottom: 10px;
+    border-bottom: 1px solid lightgrey;
+    
    
 }
 
@@ -242,30 +230,26 @@ input {
     margin-bottom: 10px;
 }
 
-.twit-button > button {
-    min-height: 32px;
-    min-width: 32px;
-}
-
 .small-btn {
-    font-size: 15px;
-    font-weight: 700;
+    width: 100%;
+    background-color: rgb(29 155 240);
+    border: none;
+    border-radius: 30px;
     color: white;
-}
-
-.border {
-    border-bottom: 1px solid lightgrey;
-    
+    font-weight: 900;
+    font-size: 10px;
+    height: 30px;
+    margin-top: 20px;
 }
 /* POSTS */
+
 
 .posts >img {
     z-index: 1;
     height: 350px;
     width: 550px;
-    position: relative;
     border-radius: 20px;
-    flex-wrap: pre-wrap;
+    
     
 }
 
@@ -324,8 +308,10 @@ input {
 /* TRENDS SEARCHBAR */
 .trends{
     justify-content: center;
-    align-items: center;
-    width:360px;
+    align-items: stretch;
+    flex-direction: row;
+    width:calc(990px - 600px);
+    height: 100vh;
     padding: 25px;
     padding-left: 10px; 
     position: relative;
@@ -334,6 +320,8 @@ input {
 }
 .searchbar {
     display: flex;
+    justify-content: center;
+    align-items: stretch;
     padding-top: 10px;
     padding-left: 20px;
     margin-bottom: 12px;
@@ -371,7 +359,7 @@ input {
 .location {
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: stretch;
 }
 p {
     font-size: 13px;
@@ -384,7 +372,7 @@ p {
     color: rgb(83 100 113);
 }
 h2 {
-    font-size: 25px;
+    font-size: 20px;
     font-weight: 800;
     color: black;
 }
@@ -405,6 +393,8 @@ h3 {
 
 }
 .whitespace{
+    align-items: stretch;
+    justify-content: center;
     padding-bottom: 100px;
     padding-left: 20px;
     position: relative;
@@ -418,9 +408,8 @@ h3 {
     padding-left: 10px;
 }
 
-/* footer */
 .categories-footer {
-    font-size: 11px;
+    font-size: 10px;
     font-weight: 500;
     cursor: pointer;
     color :rgb(83, 100, 113);
@@ -432,9 +421,7 @@ h3 {
     padding-right: 12px;
     padding: 10px;
 }
-.bodyborder{
-    border-left: 1px solid lightgrey;
-}
+
 
 
 
