@@ -6,49 +6,47 @@ body {
     height: 100vh;
     width:100vw;
     overflow-x: hidden;
-    
-    
 }
 
 *{
-    
     margin: 0;
-    padding: 0 10px;
+    padding: 0;
     box-sizing: border-box;
-
+    position: relative;
     
 }
-
-/* Category Section */
 
 .mainbody {
     display: flex;
     
 }
 
-/* sidebar */
+/* SIDEBAR */
 .category{
     display: flex;
     flex-direction:column;
     justify-content: center;
     align-items: stretch;
     margin-bottom: 2px;
+    padding-top: 20px;
+    position: sticky;
+    top: 0;
 }
 
 .sidebar {
     justify-content: center;
     align-items: center;
-    padding: 0 20px;
-    margin-top: 20px;
+    padding: 0 50px;
     cursor: pointer;
     height: 100vh;
-    width:100vw;
+    width: 430px;;
     overflow-y: hidden;
     position:sticky;
     top: 0px;
     border-right: 1px solid lightgrey;
     
 }
+
 
 .categorybird  {
     display: flex;
@@ -95,14 +93,16 @@ body {
     height: 50px;
     margin-top: 20px;
 }
+.bigbutton {
+padding-bottom: 100px;
+}
 /* ACCOUNT PROFILE */
 .account-details {
-    margin-top: 14px;
-    margin-bottom: 14px;
-    padding: 12px;
+    display: flex;
+    justify-content: space-between;
     cursor: pointer;
     font-size: 20px;
-    font-weight: 400;
+    font-weight: 500;
 }
 
 .profile >i {
@@ -114,17 +114,24 @@ body {
     display: flex;
     font-size: 17px;
     font-weight: 600;
+    padding-right: 20px;
+}
+.div {
+    display: flex;
+    justify-content: space-between;
 }
 
 .account-details :hover{
     background-color:lightgray;
-    border-radius: 9999px;
+    border-radius: 30px;
+    height: 40px;
 }
+/* SIDEBAR ENDS */
 
-/* TimeLine */
+
+/* TIMELINE */
 .main-container {
-    width:990px;
-    background-color:white;
+    width: 990px;
     flex-direction: row;
     cursor: pointer;
     padding-left: 16px;
@@ -165,9 +172,8 @@ h2 {
 
 .star :hover {
     background-color: lightgray;
-    border-radius: 9999px;
-    padding-left: 1px;
-    padding-right: 1px;
+    border-radius: 30px;
+   
 
 }
 
@@ -177,6 +183,7 @@ h2 {
     align-items: center;
     padding-top: 4px;
     padding-bottom: 4px;
+    
     
    
    
@@ -203,9 +210,11 @@ input {
     font-size: 40px;
     margin-top: 4px;
     padding-right: 12px;
+    padding-left: 15px;
 }
 
 .options {
+    display: flex;
     padding-left: 52px;
 }
 .toolbar {
@@ -227,19 +236,23 @@ input {
     font-size: 20px;
     font-weight: 500;
     padding: 5px;
-    margin-bottom: 10px;
+    
+}
+.small {
+    display: flex;
 }
 
 .small-btn {
-    width: 100%;
+    width: 80px;
     background-color: rgb(29 155 240);
     border: none;
     border-radius: 30px;
     color: white;
     font-weight: 900;
-    font-size: 10px;
-    height: 30px;
+    font-size: 12px;
+    height: 40px;
     margin-top: 20px;
+    margin-left: auto;
 }
 /* POSTS */
 
@@ -252,6 +265,7 @@ input {
     
     
 }
+
 
 .tweets {
     display: flex;
@@ -298,7 +312,7 @@ input {
     color: grey;
     padding-bottom: 10px;
 }
-.foot :hover{
+.footer-icons :hover{
     background-color: lightgrey;
     border-radius: 9999px;
 }
@@ -310,26 +324,23 @@ input {
     justify-content: center;
     align-items: stretch;
     flex-direction: row;
-    width:calc(990px - 600px);
-    height: 100vh;
+    height:100vh;
     padding: 25px;
-    padding-left: 10px; 
-    position: relative;
     
     
 }
 .searchbar {
     display: flex;
     justify-content: center;
-    align-items: stretch;
+    align-items: center;
     padding-top: 10px;
-    padding-left: 20px;
+    padding-right: 25px;
     margin-bottom: 12px;
     
 }
 .search{
     display: flex;
-    border-radius: 1000px;
+    border-radius: 30px;
     border: 1px solid #eff3f4;
     background-color: #eff3f4;
     width: 300px;
@@ -339,10 +350,8 @@ input {
 
 .search >button {
     padding: 5px;
-    padding-left: 12px;
     background-color: #eff3f4;
-    min-width:  0;
-    min-height: 0;
+    border-radius: 30px;
     border: none;
 }
 .search >input {
@@ -395,13 +404,16 @@ h3 {
 .whitespace{
     align-items: stretch;
     justify-content: center;
-    padding-bottom: 100px;
+    padding-bottom: 400px;
     padding-left: 20px;
-    position: relative;
+   
 }
 .wordstogether :hover {
     background-color:lightgrey;
     border-radius:10px;
+}
+.wordstogether {
+    padding-bottom: 10px;
 }
 .trends-for-me {
     cursor: pointer;
@@ -413,7 +425,6 @@ h3 {
     font-weight: 500;
     cursor: pointer;
     color :rgb(83, 100, 113);
-    position: relative;
     padding-left: 30px;
     
 }
@@ -421,6 +432,25 @@ h3 {
     padding-right: 12px;
     padding: 10px;
 }
+/* FIXED TREND BAR */
+.trends {
+    align-items: flex-start;
+}
+.searchbar{
+    position: sticky;
+    top: 0;
+}
+.greyout {
+    position: sticky;
+    top: 0;
+}
+.categories-footer {
+    position: sticky;
+    top: 0;
+    align-self: flex-end;
+    align-items: flex-end;
+}
+
 
 
 

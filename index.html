@@ -1,371 +1,376 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <link rel="stylesheet" href="./style.css">
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">    
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="icon" href="./assets/tweetie.jpg">
     <title>Twitter</title>
 </head>
+
 <body>
     <div class="mainbody">
-    <div class="sidebar">
-        <div class="logo">
-           <img src="./assets/bird.png" alt="Twitter logo">
-        </div>
-        <div class="category">
-            <span class="categorybird active">
-                <i class="material-icons">home</i>
-                Home
-            </span>
-
-            <span class="categorybird">
-                <i class="material-icons">tag</i>
-                Explore
-            </span>
-            <span class="categorybird">
-                <i class="material-icons">notifications_none</i>
-                Notifications
-            </span>
-            <span class="categorybird">
-                <i class="material-icons">mail_outline</i>
-                Messages
-            </span>
-            <span class="categorybird">
-                <i class="material-icons">turned_in_not</i>
-                Bookmarks
-            </span>
-            <span class="categorybird">
-                <i class="material-icons">list_alt</i>
-                Lists
-            </span>
-            <span class="categorybird">
-                <i class="material-icons">person_outline</i>
-                Profile
-            </span>
-            <span class="categorybird">
-                <i class="material-icons">pending</i>
-                More
-            </span>
-        </div>
-            <div>
-                
-                    <button class="btn-blue">Tweet</button>
-            </div>
-        
-       
-            <div class="account-details">
-            <span class="profile">
-                <i class="material-icons">account_circle</i>
-                Zainab Davids
-            </span>
-            </div>
-        
-
-    </div>
-
-    <div class="main-container">
-    
-        <div class="tweet-feed">
-             <h2>Home</h2>
-
-             <span class="star">
-                <i class="material-icons">auto_awesome</i>
-            </span>
-             </div>
-
-        <div class="translatekey">
-            <div class="acc-search">
-            <span class="profileKey">
-                <i class="material-icons">account_circle</i>
-            </span>
-                <Input type="text" placeholder="What's happening?">
-             </Input>
-            </div>
-        <div class="toolbar">
-
-            <div class="options">
-            <span class="t-icons">
-                <i class="material-icons">wallpaper</i>
-            </span>
-            <span class="t-icons">
-                <i class="material-icons">gif_box</i>
-            </span>
-            <span class="t-icons">
-                <i class="material-icons">align_horizontal_left</i>
-            </span>
-            <span class="t-icons">
-                <i class="material-icons">sentiment_satisfied_alt</i>
-            </span>
-            <span class="t-icons">
-                <i class="material-icons">calendar_today</i>
-            </span>
-            <span class="t-icons">
-                <i class="material-icons">location_pin</i>
-            </span>
-        </div>
-    
-  
-
-            <div>
-                <button class="small-btn">Tweet</button>
-            </div>
-        </div>
-          </div>
-    <div class="post-tweet">
-    <div class="tweets">
-<div class="personal-acc">
-        
-        <span class="diff-acc">
-            <i class="material-icons">account_circle</i>
-        </span>
-        <span class="name">Zainab Davids</span>
-        <span class="tick">
-             <i class="material-icons">verified</i>
-        </span>
-    <div class="grey-area">
-        <span class="n@me">@ZainabD</span>
-        <span class="dot">•</span>
-        <span class="last-seen">2h</span>
-    </div>
-</div>
-   
-    <div>
-        <span class="more">
-            <i class="material-icons">more_horiz</i>
-        </span>
-    </div>
-</div>
-                
-                <div class="posts">
-                    <img src="./assets/IMG_20220626_215039_308.jpg" alt="">
-
-                    <div class="footer-icons">
-                        <span  class="foot">
-                            <i class="material-icons">chat_bubble_outline</i>
-                            62
-                        </span>
-                        <span  class="foot">
-                            <i class="material-icons">repeat</i>
-                            159
-                        </span>
-                        <span  class="foot">
-                            <i class="material-icons">favorite_border</i>
-                            100
-                        </span>
-                        <span  class="foot">
-                            <i class="material-icons">logout</i>
-                        </span>
-                    </div>
-                    
-
-                    </div>
-                    
-            </div>  
-            <div class="post-tweet">
-                <div class="tweets">
-            <div class="personal-acc">
-                    
-                    <span class="diff-acc">
-                        <i class="material-icons">account_circle</i>
-                    </span>
-                    <span class="name">Zainab Davids</span>
-                    <span class="tick">
-                         <i class="material-icons">verified</i>
-                    </span>
-                <div class="grey-area">
-                    <span class="n@me">@ZainabD</span>
-                    <span class="dot">•</span>
-                    <span class="last-seen">2h</span>
+        <!-- SIDEBAR STARTS -->
+        <div class="sidebar">
+            <div class="category">
+                <div class="logo">
+                    <img src="./assets/bird.png" alt="Twitter logo">
                 </div>
+
+                <span class="categorybird active">
+                    <i class="material-icons">home</i>
+                    Home
+                </span>
+
+                <span class="categorybird">
+                    <i class="material-icons">tag</i>
+                    Explore
+                </span>
+                <span class="categorybird">
+                    <i class="material-icons">notifications_none</i>
+                    Notifications
+                </span>
+                <span class="categorybird">
+                    <i class="material-icons">mail_outline</i>
+                    Messages
+                </span>
+                <span class="categorybird">
+                    <i class="material-icons">turned_in_not</i>
+                    Bookmarks
+                </span>
+                <span class="categorybird">
+                    <i class="material-icons">list_alt</i>
+                    Lists
+                </span>
+                <span class="categorybird">
+                    <i class="material-icons">person_outline</i>
+                    Profile
+                </span>
+                <span class="categorybird">
+                    <i class="material-icons">pending</i>
+                    More
+                </span>
             </div>
-               
-                <div>
-                    <span class="more">
+            <div class="bigbutton">
+                <button class="btn-blue">Tweet</button>
+            </div>
+
+
+            <div class="account-details">
+                <div class="div">
+                    <span class="profile">
+                        <i class="material-icons">account_circle</i>
+                        Zainab Davids
+                    </span>
+                    <span class="accmore">
                         <i class="material-icons">more_horiz</i>
                     </span>
                 </div>
             </div>
-                            
-                            <div class="posts">
-                                <img src="./assets/IMG_20220626_215039_308.jpg" alt="">
-            
-                                <div class="footer-icons">
-                                    <span  class="foot">
-                                        <i class="material-icons">chat_bubble_outline</i>
-                                        62
-                                    </span>
-                                    <span  class="foot">
-                                        <i class="material-icons">repeat</i>
-                                        159
-                                    </span>
-                                    <span  class="foot">
-                                        <i class="material-icons">favorite_border</i>
-                                        100
-                                    </span>
-                                    <span  class="foot">
-                                        <i class="material-icons">logout</i>
-                                    </span>
+
+
+        </div>
+        <!-- SIDEBAR ENDS -->
+        <div class="main-container">
+
+            <div class="tweet-feed">
+                <h2>Home</h2>
+
+                <span class="star">
+                    <i class="material-icons">auto_awesome</i>
+                </span>
+            </div>
+
+            <div class="translatekey">
+                <div class="acc-search">
+                    <span class="profileKey">
+                        <i class="material-icons">account_circle</i>
+                    </span>
+                    <Input type="text" placeholder="What's happening?">
+                    </Input>
+                </div>
+                <div class="toolbar">
+
+                    <div class="options">
+                        <span class="t-icons">
+                            <i class="material-icons">wallpaper</i>
+                        </span>
+                        <span class="t-icons">
+                            <i class="material-icons">gif_box</i>
+                        </span>
+                        <span class="t-icons">
+                            <i class="material-icons">align_horizontal_left</i>
+                        </span>
+                        <span class="t-icons">
+                            <i class="material-icons">sentiment_satisfied_alt</i>
+                        </span>
+                        <span class="t-icons">
+                            <i class="material-icons">calendar_today</i>
+                        </span>
+                        <span class="t-icons">
+                            <i class="material-icons">location_pin</i>
+                        </span>
+                    </div>
+
+
+
+                    <div class="small">
+                        <button class="small-btn">Tweet</button>
+                    </div>
+                </div>
+            </div>
+            <div class="post-tweet">
+                <div class="tweets">
+                    <div class="personal-acc">
+
+                        <span class="diff-acc">
+                            <i class="material-icons">account_circle</i>
+                        </span>
+                        <span class="name">Zainab Davids</span>
+                        <span class="tick">
+                            <i class="material-icons">verified</i>
+                        </span>
+
+                        <div class="grey-area">
+                            <span class="n@me">@ZainabD</span>
+                            <span class="dot">•</span>
+                            <span class="last-seen">2h</span>
+                        </div>
+                    </div>
+
+                    <div>
+                        <span class="more">
+                            <i class="material-icons">more_horiz</i>
+                        </span>
+                    </div>
+                </div>
+
+                <div class="posts">
+                    <img src="./assets/IMG_20220626_215039_308.jpg" alt="">
+
+                    <div class="footer-icons">
+                        <span class="foot">
+                            <i class="material-icons">chat_bubble_outline</i>
+                            62
+                        </span>
+                        <span class="foot">
+                            <i class="material-icons">repeat</i>
+                            159
+                        </span>
+                        <span class="foot">
+                            <i class="material-icons">favorite_border</i>
+                            100
+                        </span>
+                        <span class="foot">
+                            <i class="material-icons">logout</i>
+                        </span>
+                    </div>
+
+
+                </div>
+
+            </div>
+            <div class="post-tweet">
+                <div class="tweets">
+                    <div class="personal-acc">
+
+                        <span class="diff-acc">
+                            <i class="material-icons">account_circle</i>
+                        </span>
+                        <span class="name">Zainab Davids</span>
+                        <span class="tick">
+                            <i class="material-icons">verified</i>
+                        </span>
+                        <div class="grey-area">
+                            <span class="n@me">@ZainabD</span>
+                            <span class="dot">•</span>
+                            <span class="last-seen">2h</span>
+                        </div>
+                    </div>
+
+                    <div>
+                        <span class="more">
+                            <i class="material-icons">more_horiz</i>
+                        </span>
+                    </div>
+                </div>
+
+                <div class="posts">
+                    <img src="./assets/IMG_20220626_215039_308.jpg" alt="">
+
+                    <div class="footer-icons">
+                        <span class="foot">
+                            <i class="material-icons">chat_bubble_outline</i>
+                            62
+                        </span>
+                        <span class="foot">
+                            <i class="material-icons">repeat</i>
+                            159
+                        </span>
+                        <span class="foot">
+                            <i class="material-icons">favorite_border</i>
+                            100
+                        </span>
+                        <span class="foot">
+                            <i class="material-icons">logout</i>
+                        </span>
+                    </div>
+
+
+                </div>
+
+            </div>
+        </div>
+        <!-- TRENDS -->
+
+        <div class="trends">
+            <div class="whitespace">
+                <div class="searchbar">
+                    <form class="search">
+                        <button class="s-icon"><i class="material-icons">search</i></button>
+                        <input type="text" placeholder="Search Twitter">
+
+                    </form>
+                </div>
+                <div class="greyout">
+
+                    <div class="trends-for-me">
+
+                        <h2>Trends For You</h2>
+                        <div class="wordstogether">
+                            <div class="diff-trends">
+                                <div class="location">
+                                    <p>Trending in South Africa
+                                    <p>
+                                        <span class="trendy">
+                                            <i class="material-icons">more_horiz</i>
+                                        </span>
+
                                 </div>
-                                
-            
+                                <h3>Faith Nketsi<h3>
+                                        <span class="amot">1.032 tweets</span>
+                            </div>
+
+                        </div>
+
+                        <div class="wordstogether">
+                            <div class="diff-trends">
+                                <div class="location">
+                                    <p>Trending in South Africa
+                                    <p>
+                                        <span class="trendy">
+                                            <i class="material-icons">more_horiz</i>
+                                        </span>
+
                                 </div>
-                                
-                        </div>  
+                                <h3>Zainab Davids<h3>
+                                        <span class="amot">10 000 tweets</span>
+                            </div>
+                        </div>
+
+                        <div class="wordstogether">
+                            <div class="diff-trends">
+                                <div class="location">
+                                    <p>Trending in South Africa
+                                    <p>
+                                        <span class="trendy">
+                                            <i class="material-icons">more_horiz</i>
+                                        </span>
+
+                                </div>
+                                <h3>#SelenaStyles<h3>
+                                        <span class="amot">500K tweets</span>
+                            </div>
+                        </div>
+
+                        <div class="wordstogether">
+                            <div class="diff-trends">
+                                <div class="location">
+                                    <p>Trending in South Africa
+                                    <p>
+                                        <span class="trendy">
+                                            <i class="material-icons">more_horiz</i>
+                                        </span>
+
+                                </div>
+                                <h3>#THEROCKDANCES<h3>
+                                        <span class="amot">25K tweets</span>
+                            </div>
+                        </div>
+
+                        <div class="wordstogether">
+                            <div class="diff-trends">
+                                <div class="location">
+                                    <p>Trending in South Africa
+                                    <p>
+                                        <span class="trendy">
+                                            <i class="material-icons">more_horiz</i>
+                                        </span>
+
+                                </div>
+                                <h3>#ISLAMICQUOTES<h3>
+                                        <span class="amot">100K tweets</span>
+                            </div>
+                        </div>
+
+                        <div class="wordstogether">
+                            <div class="diff-trends">
+                                <div class="location">
+                                    <p>Trending in South Africa
+                                    <p>
+                                        <span class="trendy">
+                                            <i class="material-icons">more_horiz</i>
+                                        </span>
+
+                                </div>
+                                <h3>Christiano Ronaldo<h3>
+                                        <span class="amot">600K tweets</span>
+                            </div>
+                        </div>
+
+                        <div class="wordstogether">
+                            <div class="diff-trends">
+                                <div class="location">
+                                    <p>Trending in South Africa
+                                    <p>
+                                        <span class="trendy">
+                                            <i class="material-icons">more_horiz</i>
+                                        </span>
+
+                                </div>
+                                <h3>#teabagchallenge<h3>
+                                        <span class="amot">100K tweets</span>
+                            </div>
+                        </div>
+
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="categories-footer">
+                <div class="footer-section">
+                    <span>Terms of Service</span>
+                    <span>Privacy Policy</span>
+                    <span>Cookie Policy</span>
+                    <span>Accessibility</span>
+                    <span>Ads info</span>
+                    <span>More</span>
+                    <span>Zaio Platform</span>
+                </div>
+
+            </div>
         </div>
-     <!-- TRENDS -->
-    
-<div class="trends">
-    <div class="whitespace">
-    <div class="searchbar">
-        <form class="search">
-            <button class="s-icon"><i class="material-icons">search</i></button>
-            <input type="search" placeholder="Search Twitter">
-            
-        </form>
-    </div>
-    <div class="greyout">
-        
-    <div class="trends-for-me">
-        
-        <h2>Trends For You</h2>
-<div class="wordstogether">
-            <div class="diff-trends">
-        <div class="location">
-        <p>Trending in South Africa<p>
-            <span class="trendy">
-                <i class="material-icons">more_horiz</i>
-            </span>
 
-        </div>
-            <h3>Faith Nketsi<h3>
-            <span class="amot">1.032 tweets</span>
-        </div>
-    
-</div>
 
-<div class="wordstogether">
-        <div class="diff-trends">
-    <div class="location">
-    <p>Trending in South Africa<p>
-        <span class="trendy">
-            <i class="material-icons">more_horiz</i>
-        </span>
+
 
     </div>
-        <h3>Zainab Davids<h3>
-        <span class="amot">10 000 tweets</span>
-    </div>
-</div>
 
-<div class="wordstogether">
-    <div class="diff-trends">
-<div class="location">
-<p>Trending in South Africa<p>
-    <span class="trendy">
-        <i class="material-icons">more_horiz</i>
-    </span>
-
-</div>
-    <h3>#SelenaStyles<h3>
-    <span class="amot">500K tweets</span>
-</div>
-</div>
-
-<div class="wordstogether">
-    <div class="diff-trends">
-<div class="location">
-<p>Trending in South Africa<p>
-    <span class="trendy">
-        <i class="material-icons">more_horiz</i>
-    </span>
-
-</div>
-    <h3>#THEROCKDANCES<h3>
-    <span class="amot">25K tweets</span>
-</div>
-</div>
-
-<div class="wordstogether">
-    <div class="diff-trends">
-<div class="location">
-<p>Trending in South Africa<p>
-    <span class="trendy">
-        <i class="material-icons">more_horiz</i>
-    </span>
-
-</div>
-    <h3>#ISLAMICQUOTES<h3>
-    <span class="amot">100K tweets</span>
-</div>
-</div>
-
-<div class="wordstogether">
-    <div class="diff-trends">
-<div class="location">
-<p>Trending in South Africa<p>
-    <span class="trendy">
-        <i class="material-icons">more_horiz</i>
-    </span>
-
-</div>
-    <h3>Christiano Ronaldo<h3>
-    <span class="amot">600K tweets</span>
-</div>
-</div>
-
-<div class="wordstogether">
-    <div class="diff-trends">
-<div class="location">
-<p>Trending in South Africa<p>
-    <span class="trendy">
-        <i class="material-icons">more_horiz</i>
-    </span>
-
-</div>
-    <h3>#teabagchallenge<h3>
-    <span class="amot">100K tweets</span>
-</div>
-</div>
-
-
-  </div>
-</div> 
-</div>
-
-<div class="categories-footer">
-    <div class="footer-section">
-      <span>Terms of Service</span>
-      <span>Privacy Policy</span>
-      <span>Cookie Policy</span>
-      <span>Accessibility</span>
-      <span>Ads info</span>
-      <span>More</span>
-      <span>Zaio Platform</span>
-    </div>
-
-</div>
-</div>
-   
-    
-    
-        
-    </div>
-    
 </body>
+
 </html>
-                
-            
-                
-            
-             
-
-
-    
-
-    
-    
-    
