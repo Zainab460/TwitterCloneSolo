@@ -314,13 +314,36 @@ input {
     color: grey;
     padding-bottom: 10px;
 }
-.footer-icons :hover{
-    background-color: lightgrey;
-    border-radius: 9999px;
-}
 .foot >i {
     font-size: 20px;
 }
+.one :hover{
+    background-color:#eff3f4 ;
+    border-radius: 30px;
+    color: lightblue;
+}
+.two :hover{
+    background-color:#eff3f4 ;
+    border-radius: 30px;
+    color:lightgreen;
+}
+.three :hover{
+    background-color:#eff3f4 ;
+    border-radius: 30px;
+    color: pink;
+}
+.four :hover{
+    background-color:#eff3f4 ;
+    border-radius: 30px;
+    color: lightblue;
+}
+.footer-icons :hover{
+    background-color:#eff3f4;
+    border-radius: 30px;
+   
+}
+
+
 /* TRENDS SEARCHBAR */
 .trends{
     justify-content: center;
