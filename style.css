@@ -10,7 +10,7 @@ body {
 
 *{
     margin: 0;
-    padding: 0;
+    padding: 0 ;
     box-sizing: border-box;
     position: relative;
     
@@ -18,6 +18,8 @@ body {
 
 .mainbody {
     display: flex;
+   
+    
     
 }
 
@@ -39,7 +41,7 @@ body {
     padding: 0 50px;
     cursor: pointer;
     height: 100vh;
-    width: 430px;;
+    width: 390px;
     overflow-y: hidden;
     position:sticky;
     top: 0px;
@@ -131,7 +133,7 @@ padding-bottom: 100px;
 
 /* TIMELINE */
 .main-container {
-    width: 990px;
+    width: 700px;
     flex-direction: row;
     cursor: pointer;
     padding-left: 16px;
@@ -252,7 +254,7 @@ input {
     font-size: 12px;
     height: 40px;
     margin-top: 20px;
-    margin-left: auto;
+    cursor: pointer;
 }
 /* POSTS */
 
@@ -322,20 +324,23 @@ input {
 /* TRENDS SEARCHBAR */
 .trends{
     justify-content: center;
-    align-items: stretch;
+    align-items: center;
     flex-direction: row;
     height:100vh;
-    padding: 25px;
-    
-    
+    width: 430px;
+    padding-right: 50px;
+    padding-top: 5px;
+    position: relative;
 }
+
 .searchbar {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding-top: 10px;
-    padding-right: 25px;
-    margin-bottom: 12px;
+    margin-bottom: 10px;
+    padding-right: 50px;
+   
+    
     
 }
 .search{
@@ -344,7 +349,7 @@ input {
     border: 1px solid #eff3f4;
     background-color: #eff3f4;
     width: 300px;
-
+    
 }
 
 
@@ -359,6 +364,8 @@ input {
     font-size: 15px;
     font-weight: 400;
     padding: 12px;
+    padding-right: 50px;
+   
     
 }
 .s-icon >i {
@@ -399,13 +406,14 @@ h3 {
     border: 1px solid #eff3f4;
     background-color: #eff3f4;
     border-radius: 20px;
+    padding-left: 10px;
 
 }
 .whitespace{
     align-items: stretch;
     justify-content: center;
-    padding-bottom: 400px;
     padding-left: 20px;
+    margin-bottom: 10px;
    
 }
 .wordstogether :hover {
@@ -426,31 +434,75 @@ h3 {
     cursor: pointer;
     color :rgb(83, 100, 113);
     padding-left: 30px;
+    position: sticky;
+    top: 0;
     
 }
 .footer-section span {
     padding-right: 12px;
     padding: 10px;
 }
-/* FIXED TREND BAR */
-.trends {
-    align-items: flex-start;
-}
-.searchbar{
+
+/* WHO TO FOLLOW */
+.follow {
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 20px;
+    padding-bottom: 130px;
     position: sticky;
     top: 0;
+    
+
 }
-.greyout {
-    position: sticky;
-    top: 0;
-}
-.categories-footer {
-    position: sticky;
-    top: 0;
-    align-self: flex-end;
-    align-items: flex-end;
+.follow_suggestions {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 16px;
+    cursor: pointer;
+    
 }
 
+.followtick {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+.alltogether {
+    display: flex;
+}
+.celeb-acc >i {
+    font-size: 40px;
+    font-weight: 400;
+    height: 48px;
+}
+.celeb-name {
+    font-size: 15px;
+    font-weight: 600;
+}
+.celeb-name p {
+    font-size: 13px;
+    font-weight: 500;
+}
+.follow_button {
+    border-radius: 30px;
+    border: none;
+    color:white;
+    background-color: black;
+    height: 30px;
+    width: 80px;
+    font-size: 13px;
+    font-weight:900;
+    cursor: pointer;
+}
+.tohover :hover {
+    background-color: lightgrey;
+    border-radius: 20px;
+}
+.followtick :hover {
+    background-color: black;
+}
 
 
 
