@@ -1,0 +1,29 @@
+@media (max-width: 600px) {
+
+body {
+    background: white;
+} 
+.mainbody{
+    flex-direction: row;
+}
+.trends{
+    display: none;
+}
+.sidebar{
+    display: none;
+}
+ .tweet-feed {
+    display:flex;
+}
+.main-container{
+    width: 100%;
+    height: 40px;
+}
+
+
+}
+.posts >img {
+    width: 100%;
+    height: auto;
+}
+    
