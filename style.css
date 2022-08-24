@@ -54,7 +54,7 @@ body {
     display: flex;
     align-items: center;
     flex-direction: row;
-    font-size: 17px;
+    font-size: 15px;
     font-weight: 600;
     padding: 12px;
 }
@@ -158,7 +158,7 @@ padding-bottom: 100px;
 }
 
 h2 {
-    font-size: 20px;
+    font-size: 15px;
     padding-top: 2px;
     padding-bottom: 2px;
     font-weight: 700;
@@ -261,7 +261,7 @@ input {
 
 .posts >img {
     z-index: 1;
-    height: 350px;
+    height: 250px;
     width: 550px;
     border-radius: 20px;
     
@@ -362,9 +362,14 @@ input {
     align-items: center;
     margin-bottom: 10px;
     padding-right: 50px;
+    padding-bottom: 10px;   
+}
+.scrollablefix {
+    align-items: stretch;
+    justify-content: center;
+    padding-left: 20px;
+    margin-bottom: 10px;
    
-    
-    
 }
 .search{
     display: flex;
@@ -432,13 +437,6 @@ h3 {
     padding-left: 10px;
 
 }
-.whitespace{
-    align-items: stretch;
-    justify-content: center;
-    padding-left: 20px;
-    margin-bottom: 10px;
-   
-}
 .wordstogether :hover {
     background-color:lightgrey;
     border-radius:10px;
@@ -452,18 +450,30 @@ h3 {
 }
 
 .categories-footer {
-    font-size: 10px;
+    display: flex;
+    font-size: 11px;
     font-weight: 500;
     cursor: pointer;
     color :rgb(83, 100, 113);
     padding-left: 30px;
-    position: sticky;
-    top: 0;
+   
     
 }
-.footer-section span {
-    padding-right: 12px;
-    padding: 10px;
+.footer-section a {
+    padding-right: 5px;
+    padding: 5px;
+}
+    footer {  
+        display:inline-block;
+        position: relative;
+        left: 5px;
+        bottom: 5px;  
+        right: 5px;    
+        color:grey;  
+        text-align: right; 
+        padding-right: 12px;
+        padding: 10px;  
+         
 }
 
 /* WHO TO FOLLOW */
@@ -472,8 +482,7 @@ h3 {
     justify-content: space-between;
     padding-left: 20px;
     padding-bottom: 130px;
-    position: sticky;
-    top: 0;
+    
     
 
 }
