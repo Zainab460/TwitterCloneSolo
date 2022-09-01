@@ -6,6 +6,7 @@ body {
     height: 100vh;
     width:100vw;
     overflow-x: hidden;
+    padding: 0 10px;
 }
 
 *{
@@ -15,163 +16,67 @@ body {
     position: relative;
     
 }
-
-.mainbody {
-    display: flex;
-   
-    
-    
-}
-
 /* SIDEBAR */
-.category{
-    display: flex;
-    flex-direction:column;
-    justify-content: center;
-    align-items: stretch;
-    margin-bottom: 2px;
-    padding-top: 20px;
+.sidebar {
+    width: 480px;
+    cursor: pointer;
+    border-right: 1px solid lightgrey;
     position: sticky;
     top: 0;
 }
 
-.sidebar {
-    justify-content: center;
-    align-items: center;
-    padding: 0 50px;
-    cursor: pointer;
-    height: 100vh;
-    width: 390px;
-    overflow-y: hidden;
-    position:sticky;
-    top: 0px;
-    border-right: 1px solid lightgrey;
-    
-}
-
-
-.categorybird  {
-    display: flex;
-    align-items: center;
-    flex-direction: row;
-    font-size: 15px;
-    font-weight: 600;
-    padding: 12px;
-}
 .active {
     font-weight: 900;
 }
 .active i{
     color: black;
 }
-
-.categorybird >i {
-    font-size: 20px;
-    padding-right: 20px;
+.p-2 {
+    margin-bottom: 10px;
 }
-
-.category :hover {
-    background-color:lightgray;
+.fs-4 >i {
+    margin-right: 10px;
+}
+.fullhover :hover {
+    background-color: lightgrey;
     border-radius: 30px;
-}
-
- .logo >img{
-    display: flex;
-    height: 25px;
-    padding-top: 2px;
-    padding-bottom: 2px;
     
 }
  
 /* TWEET BUTTON */
-.btn-blue {
-    width: 100%;
-    background-color: rgb(29 155 240);
-    border: none;
+.sidebutton button {
+        width: 90%;
+        height: 10%;
+}
+.spacing {
+    padding-top: 120px;
+
+}
+.spacing :hover {
+    background-color: lightgrey;
     border-radius: 30px;
-    color: white;
-    font-weight: 900;
-    font-size: 17px;
-    height: 50px;
-    margin-top: 20px;
 }
-.bigbutton {
-padding-bottom: 100px;
-}
-/* ACCOUNT PROFILE */
-.account-details {
-    display: flex;
-    justify-content: space-between;
-    cursor: pointer;
-    font-size: 20px;
-    font-weight: 500;
-}
+    
 
-.profile >i {
-    font-size: 20px;
-    padding-right: 20px;
 
-}
-.profile {
-    display: flex;
-    font-size: 17px;
-    font-weight: 600;
-    padding-right: 20px;
-}
-.div {
-    display: flex;
-    justify-content: space-between;
-}
 
-.account-details :hover{
-    background-color:lightgray;
-    border-radius: 30px;
-    height: 40px;
-}
 /* SIDEBAR ENDS */
 
 
-/* TIMELINE */
+/* TIMELINE STARTS*/
+/* NAVBAR */
 .main-container {
-    width: 700px;
-    flex-direction: row;
-    cursor: pointer;
-    padding-left: 16px;
-    padding-right: 16px;
     border-right: 1px solid lightgrey;
 }
-.post-tweet {
-    border-bottom: 1px solid lightgrey;
-
-
-}
-
-.tweet-feed {
-    display: flex;
-    justify-content: space-between;
-    padding: 15px 20px;
+.stickysituation {
+    cursor: pointer;
     position: sticky;
     top: 0;
     z-index: 100;
+    opacity:90%;
     background-color: white;
-    
-}
 
-h2 {
-    font-size: 15px;
-    padding-top: 2px;
-    padding-bottom: 2px;
-    font-weight: 700;
-    
 }
-
-.star >i {
-    font-size: 22px;
-    padding-top: 2px;
-    padding-bottom: 2px;
-   
-}
-
 .star :hover {
     background-color: lightgray;
     border-radius: 30px;
@@ -179,170 +84,50 @@ h2 {
 
 }
 
-.translateKey {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    padding-top: 4px;
-    padding-bottom: 4px;
-    
-    
-   
-   
-}
-.acc-search {
-    display: flex;
-    align-items: center;
-   
-}
-input {
-    border:none;
-    border: 4px;
-    font-size: 20px;
-    font-weight: 400;
-    padding-top: 2px;
-    padding-bottom: 2px;
-    cursor: text;
-    outline: none;
-    overflow: hidden
-    
-}
-
-.profileKey >i {
-    font-size: 40px;
-    margin-top: 4px;
-    padding-right: 12px;
-    padding-left: 15px;
-}
-
-.options {
-    display: flex;
-    padding-left: 52px;
-}
-.toolbar {
-    display: flex;
-    align-items: center;
-    justify-content:space-between;
-    flex-direction: row;
-    margin-right: 2px;
-    margin-left: 2px;
-    color:rgb(29 155 240);
-    padding-bottom: 10px;
-    border-bottom: 1px solid lightgrey;
-    
-   
-}
-
-
-.t-icons >i {
-    font-size: 20px;
-    font-weight: 500;
-    padding: 5px;
-    
-}
-.small {
-    display: flex;
-}
-
-.small-btn {
-    width: 80px;
-    background-color: rgb(29 155 240);
-    border: none;
-    border-radius: 30px;
-    color: white;
-    font-weight: 900;
-    font-size: 12px;
-    height: 40px;
-    margin-top: 20px;
+.work {
     cursor: pointer;
 }
+.work :hover{
+background-color: aliceblue;
+border-radius: 30px;
+}
+/* NAVBAR */
+
+
+
 /* POSTS */
 
-
-.posts >img {
-    z-index: 1;
-    height: 250px;
-    width: 550px;
-    border-radius: 20px;
-    
-    
+.picture >img {
+    border: 1px solid lightgrey;
+    border-radius: 30px;
 }
 
-
-.tweets {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding-bottom: 10px;
-    padding-top: 10px;
-}
-.personal-acc {
-    display: flex;
-    justify-content: center;
-}
-
-.diff-acc >i {
-    font-size: 20px;
-    padding-right: 12px;
-}
-.name {
-    font-size: 15px;
-    font-weight: 700;
-}
-.tick >i {
-    font-size: 15px;
-    font-weight: 400;
-    margin-left: 2px;
-    height: 1.25em;
-    color: rgb(29 155 240);
-}
-.grey-area {
-    color:gray;
-    font-weight: 700;
-    font-size: 15px;
-}
-.more >i {
-    color:lightgrey;
-    font-weight: 700;
-    font-size: 20px
-}
-.footer-icons {
-    display: flex;
-    justify-content: space-between;
-    font-size: 13px;
-    font-weight: 400;
-    color: grey;
-    padding-bottom: 10px;
-}
-.foot >i {
-    font-size: 20px;
+.footer {
+    cursor: pointer;
 }
 .one :hover{
-    background-color:#eff3f4 ;
+    color:  rgb(145, 221, 221);
+    background-color: rgb(242, 247, 247);
     border-radius: 30px;
-    color: lightblue;
-}
-.two :hover{
-    background-color:#eff3f4 ;
-    border-radius: 30px;
-    color:lightgreen;
-}
-.three :hover{
-    background-color:#eff3f4 ;
-    border-radius: 30px;
-    color: pink;
-}
-.four :hover{
-    background-color:#eff3f4 ;
-    border-radius: 30px;
-    color: lightblue;
-}
-.footer-icons :hover{
-    background-color:#eff3f4;
-    border-radius: 30px;
-   
 }
 
+.two :hover{
+    color:  rgb(160, 221, 145);
+    background-color: rgb(228, 245, 224);
+    border-radius: 30px;
+}
+
+.three :hover{
+    color:  rgb(221, 145, 198);
+    background-color: rgb(247, 224, 241);
+    border-radius: 30px;
+}
+
+.four :hover{
+    color:  rgb(141, 221, 221);
+    background-color: rgb(212, 247, 247);
+    border-radius: 30px;
+}
 
 /* TRENDS SEARCHBAR */
 .trends{
