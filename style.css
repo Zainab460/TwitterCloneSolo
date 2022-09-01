@@ -56,14 +56,10 @@ body {
     background-color: lightgrey;
     border-radius: 30px;
 }
-    
-
-
-
 /* SIDEBAR ENDS */
 
 
-/* TIMELINE STARTS*/
+/* MIDDLE CONTAINER*/
 /* NAVBAR */
 .main-container {
     border-right: 1px solid lightgrey;
@@ -90,6 +86,10 @@ body {
 .work :hover{
 background-color: aliceblue;
 border-radius: 30px;
+}
+.outline >input {
+    border: none;
+    outline: white;
 }
 /* NAVBAR */
 
@@ -131,107 +131,52 @@ border-radius: 30px;
 
 /* TRENDS SEARCHBAR */
 .trends{
-    justify-content: center;
-    align-items: center;
-    flex-direction: row;
-    height:100vh;
     width: 430px;
-    padding-right: 50px;
-    padding-top: 5px;
-    position: relative;
+    
 }
 
-.searchbar {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 10px;
-    padding-right: 50px;
-    padding-bottom: 10px;   
+
+.white {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    padding-bottom: 1px;
 }
-.scrollablefix {
-    align-items: stretch;
-    justify-content: center;
-    padding-left: 20px;
-    margin-bottom: 10px;
-   
+form input {
+    outline: none;
 }
 .search{
-    display: flex;
     border-radius: 30px;
-    border: 1px solid #eff3f4;
     background-color: #eff3f4;
-    width: 300px;
+    width: 400px;
     
 }
 
 
-.search >button {
-    padding: 5px;
-    background-color: #eff3f4;
-    border-radius: 30px;
-    border: none;
-}
 .search >input {
     background-color:  #eff3f4;
-    font-size: 15px;
-    font-weight: 400;
-    padding: 12px;
-    padding-right: 50px;
-   
-    
 }
-.s-icon >i {
-    color:rgb(83 100 113);
+h6 {
+    color: rgb(83 100 113); 
 }
 
-.location {
-    display: flex;
-    justify-content: space-between;
-    align-items: stretch;
-}
-p {
-    font-size: 13px;
-    font-weight: 400;
-    color: rgb(83 100 113);
-}
-.trendy >i {
-    font-size: 20px;
-    font-weight: 400;
-    color: rgb(83 100 113);
-}
-h2 {
-    font-size: 20px;
-    font-weight: 800;
-    color: black;
-}
-h3 {
-    font-size: 15px;
-    font-weight: 700;
-    color: black;
-}
-.amot {
-    font-size: 13px;
-    font-weight: 400;
-    color:grey;
-}
 .greyout{
     border: 1px solid #eff3f4;
     background-color: #eff3f4;
     border-radius: 20px;
-    padding-left: 10px;
+    
+    
+   
 
 }
 .wordstogether :hover {
     background-color:lightgrey;
     border-radius:10px;
 }
-.wordstogether {
-    padding-bottom: 10px;
-}
+
 .trends-for-me {
     cursor: pointer;
-    padding-left: 10px;
+    
 }
 
 .categories-footer {
