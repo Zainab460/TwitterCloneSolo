@@ -91,6 +91,9 @@ border-radius: 30px;
     border: none;
     outline: white;
 }
+.POSTS {
+    cursor: pointer;
+}
 /* NAVBAR */
 
 
@@ -179,92 +182,21 @@ h6 {
     
 }
 
-.categories-footer {
-    display: flex;
-    font-size: 11px;
-    font-weight: 500;
-    cursor: pointer;
-    color :rgb(83, 100, 113);
-    padding-left: 30px;
-   
-    
-}
-.footer-section a {
-    padding-right: 5px;
-    padding: 5px;
-}
-    footer {  
-        display:inline-block;
-        position: relative;
-        left: 5px;
-        bottom: 5px;  
-        right: 5px;    
-        color:grey;  
-        text-align: right; 
-        padding-right: 12px;
-        padding: 10px;  
-         
-}
-
 /* WHO TO FOLLOW */
-.follow {
-    align-items: center;
-    justify-content: space-between;
-    padding-left: 20px;
-    padding-bottom: 130px;
-    
-    
-
+.grey {
+    background-color:#eff3f4;
+    border-radius: 20px;
 }
-.follow_suggestions {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 10px 16px;
-    cursor: pointer;
-    
-}
-
-.followtick {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    
-}
-.alltogether {
-    display: flex;
-}
-.celeb-acc >i {
-    font-size: 40px;
-    font-weight: 400;
-    height: 48px;
-}
-.celeb-name {
-    font-size: 15px;
-    font-weight: 600;
-}
-.celeb-name p {
-    font-size: 13px;
-    font-weight: 500;
-}
-.follow_button {
-    border-radius: 30px;
-    border: none;
-    color:white;
-    background-color: black;
-    height: 30px;
-    width: 80px;
-    font-size: 13px;
-    font-weight:900;
+.profile {
+    font-size: 60px;
     cursor: pointer;
 }
-.tohover :hover {
+.tohover :hover{
     background-color: lightgrey;
     border-radius: 20px;
 }
-.followtick :hover {
-    background-color: black;
-}
+
+
 
 
 
