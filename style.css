@@ -227,6 +227,14 @@ h6 {
     border-radius: 20px;
 }
 
+/* FOOTER SECTION */
+footer >a :hover{
+    cursor: pointer;
+    text-decoration: underline;
+
+    
+}
+
 .trends{
     width: 450px;
     height: 100vh;
