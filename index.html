@@ -19,9 +19,9 @@
 <body>
     <div class="mainbody d-flex">
         <!-- SIDEBAR STARTS -->
-        <div class="sidebar pt-3 justify-content-center align-items-center vh-100">
+        <div class="sidebar  pt-3 justify-content-between align-items-center vh-100  ">
 
-            <div class="d-flex flex-column mb-3">
+            <div class="row d-flex flex-column mb-3 px-4">
 
                 <div class="t-hov">
                     <span class=" fs-2  mx-3">
@@ -30,67 +30,51 @@
                     </span>
                 </div>
                 <div class="fullhover mx-3">
+                    <div class="the p-2 ">
+                        <i class="bi bi-house-fill fs-4"></i>
+                        <span class="fs-4 active px-3 d-none d-xl-inline ">Home</span>
+                </div>
+                </div>
+                <div class="fullhover mx-3">
                     <div class="the p-2">
-                        <span class="fs-4 active">
-                            <i class="bi bi-house-fill"></i>
-                            Home
-                        </span>
+                        <i class="bi bi-hash fs-4"></i>
+                        <span class="fs-4 px-3 d-none d-xl-inline">Explore</span>
                     </div>
                 </div>
                 <div class="fullhover mx-3">
                     <div class="the p-2">
-                        <span class="fs-4">
-                            <i class="bi bi-hash"></i>
-                            Explore
-                        </span>
+                        <i class="bi bi-bell fs-4"></i>
+                        <span class="fs-4 px-3 d-none d-xl-inline">Notifications</span>
                     </div>
                 </div>
                 <div class="fullhover mx-3">
                     <div class="the p-2">
-                        <span class="fs-4">
-                            <i class="bi bi-bell"></i>
-                            Notifications
-                        </span>
+                        <i class="bi bi-envelope fs-4"></i>
+                        <span class="fs-4 px-3 d-none d-xl-inline">Messages</span>
                     </div>
                 </div>
                 <div class="fullhover mx-3">
                     <div class="the p-2">
-                        <span class="fs-4">
-                            <i class="bi bi-envelope"></i>
-                            Messages
-                        </span>
+                        <i class="bi bi-bookmark fs-4"></i>
+                        <span class="fs-4 px-3 d-none d-xl-inline">Bookmarks</span>
                     </div>
                 </div>
                 <div class="fullhover mx-3">
                     <div class="the p-2">
-                        <span class="fs-4">
-                            <i class="bi bi-bookmark"></i>
-                            Bookmarks
-                        </span>
+                        <i class="bi bi-card-list fs-4"></i>
+                        <span class="fs-4 px-3 d-none d-xl-inline">Lists</span>
                     </div>
                 </div>
                 <div class="fullhover mx-3">
                     <div class="the p-2">
-                        <span class="fs-4">
-                            <i class="bi bi-card-list"></i>
-                            Lists
-                        </span>
+                        <i class="bi bi-person fs-4"></i>
+                        <span class="fs-4 px-3 d-none d-xl-inline">Profile</span>
                     </div>
                 </div>
                 <div class="fullhover mx-3">
                     <div class="the p-2">
-                        <span class="fs-4">
-                            <i class="bi bi-person"></i>
-                            Profile
-                        </span>
-                    </div>
-                </div>
-                <div class="fullhover mx-3">
-                    <div class="the p-2">
-                        <span class="fs-4">
-                            <i class="bi  bi-three-dots"></i>
-                            More
-                        </span>
+                        <i class="bi  bi-three-dots fs-4"></i>
+                        <span class="fs-4 px-3 d-none d-xl-inline">More</span>
                     </div>
                 </div>
 
@@ -98,28 +82,32 @@
 
             </div>
             <!-- BUTTON -->
-            <span class="sidebutton">
+            <span class="sidebutton d-none d-xl-inline px-4">
                 <button class="text-white rounded-pill fw-bold fs-4">Tweet</button>
             </span>
             <!-- ACCOUNT PROFILE -->
-            <div class="spacing mx-3">
-                <div class="d-flex flex-row mb-3 justify-content-between">
-                    <div class="p-2 fs-4">
-                        <i class="bi bi-person-circle"></i>
-                        ZainabD
-                    </div>
-                    <div class="p-2 fs-4">
-                        <i class="bi bi-three-dots"></i>
+            <div class="spacing mx-3 align-items-center ">
+                <div class="d-flex flex-row align-items-center justify-content-between">
+                <div class="p-acc">
+                    <img src="./assets/bg_pic.jpg" alt="profile" class="">
+                </div>
+                <div class=" align-items-center">
+                    <p class="mx-3 fs-5 d-none d-xl-inline fw-semibold">ZainabD</p>
+                    <span class="p-2 mx-1 fs-6 text-secondary d-none d-xl-inline">@ZainabDavids5</span>
+                </div>
+                
+                    <div class="p-2 fs-4 mb-3">
+                        <i class="bi bi-three-dots d-none d-xl-inline"></i>
                     </div>
                 </div>
             </div>
         </div>
         <!-- SIDEBAR ENDS -->
 
-        <div class=" container-lg ">
+        <div class=" container-fluid ">
             <div class="row">
                 <!-- MIDDLE CONTAINER STARTS -->
-                <div class="col-7">
+                <div class="col-12 col-lg-7 ">
                     <div class="main-container">
                         <!-- HOME STAR -->
                         <div class="stickysituation">
@@ -128,18 +116,18 @@
 
                                 <div class="star">
                                     <div class="universe">
-                                        <i class="material-icons fs-4 fw-bold mx-2">auto_awesome</i>
+                                        <i class="material-icons fs-4 fw-bold mx-2 text-end">auto_awesome</i>
                                     </div>
                                 </div>
                             </div>
                         </div>
                         <!-- HOME STAR -->
                         <!-- ACCOUNT HAPPENINGS -->
-                        <div class="happening my-2">
+                        <div class="happening my-2 align-items-center d-none d-sm-inline">
                             <div class="d-flex align-items-center ">
-                                <span class="pro fs-1">
-                                    <i class="bi bi-person-circle px-3"></i>
-                                </span>
+                                <div class="pro mx-3">
+                                    <img src="./assets/bg_pic.jpg" alt="profile" class="">
+                                </div>
 
                             <div class="outline">
                                 <input class="border-0 fs-4 " type="text" placeholder="What's happening?">
@@ -149,15 +137,15 @@
                         <!-- ACCOUNT HAPPENINGS -->
 
                         <!-- ICONS AND BUTTON -->
-                        <div class="border-bottom fs-5 d-flex align-items-center justify-content-between">
+                        <div class="border-bottom fs-5 d-flex align-items-center justify-content-between d-none d-sm-flex">
                             <div class="px-4">
                                 <div class="icons px-5">
                                     <div class="work">
                                         <i class="bi bi-image px-2"></i>
                                         <i class="bi bi-filetype-gif px-2"></i>
-                                        <i class="bi bi-body-text px-2"></i>
+                                        <i class="bi bi-body-text px-2 d-none d-xl-inline"></i>
                                         <i class="bi bi-emoji-smile px-2"></i>
-                                        <i class="bi bi-calendar4 px-2"></i>
+                                        <i class="bi bi-calendar4 px-2 d-none d-xl-inline"></i>
                                         <i class="bi bi-geo-alt px-2"></i>
                                     </div>
                                 </div>
@@ -175,13 +163,15 @@
                         <div class="POSTS border-bottom">
                             <div class="align-items-center justify-content-between">
                                 <div class="d-flex align-items-center justify-content-between">
-                                    <div class="d-flex py-2">
-                                        <i class="bi bi-person-circle fs-2 ps-3"></i>
+                                    <div class="d-flex py-2 mx-3">
+                                        <div class="p-acc">
+                                            <img src="./assets/bg_pic.jpg" alt="profile" class="">
+                                        </div>
                                         <p class="under fs-5 fw-semibold text-dark mx-1">Zainab Davids</p>
                                         <i class="color bi bi-patch-check-fill"></i>
-                                        <p class="fs-5 fw-light text-secondary">@ZainabD</p>
-                                        <p class="fs-5 fw-light text-secondary">•</p>
-                                        <p class="under fs-5 fw-light text-secondary">2h</p>
+                                        <p class="fs-5 fw-normal text-secondary">@ZainabD</p>
+                                        <p class="fs-5 fw-normal text-secondary mx-1">•</p>
+                                        <p class="under fs-5 fw-normal text-secondary">2h</p>
                                     </div>
 
 
@@ -234,13 +224,15 @@
                         <div class="POSTS border-bottom">
                             <div class="align-items-center justify-content-between">
                                 <div class="d-flex align-items-center justify-content-between">
-                                    <div class="d-flex py-2">
-                                        <i class="bi bi-person-circle fs-2 ps-3 "></i>
+                                    <div class="d-flex py-2 mx-3">
+                                        <div class="p-acc">
+                                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQJvPwdQjOvCQ9KFBdorbhhD4NzGALohw4aPA&usqp=CAU" alt="profile" class="">
+                                        </div>
                                         <p class="under fs-5 fw-semibold text-dark mx-1">Emma Watson</p>
                                         <i class="color bi bi-patch-check-fill"></i>
-                                        <p class="fs-5 fw-light text-secondary">@EmWatson</p>
-                                        <p class="fs-5 fw-light text-secondary">•</p>
-                                        <p class="under fs-5 fw-light text-secondary">7d</p>
+                                        <p class="fs-5 fw-normal text-secondary">@EmWatson</p>
+                                        <p class="fs-5 fw-normal text-secondary mx-1">•</p>
+                                        <p class="under fs-5 fw-normal text-secondary">7d</p>
                                     </div>
 
 
@@ -300,7 +292,7 @@
                 <!-- MIDDLE CONTAINER ENDS -->
 
                 <!-- RIGHTBAR STARTS -->
-                <div class="rightbar col-5 vh-100">
+                <div class="rightbar col-5 vh-100 d-none d-lg-block">
                     
                         <div class="trends justify content-center align-items-center  p-1 ">
                            <!-- SEARCH BUTTON -->
@@ -385,62 +377,64 @@
                     <!-- WHO TO FOLLOW -->
                     <div class="grey">
                         <h4 class="p-2 fw-bold">Who To Follow</h4>
-                        <div class="tohover">
-                            <div class="d-flex align-items-center justify-content-between">
-                            
-                                <div class=" profile d-flex align-items-center">
-                                    <span class="">
-                                        <i class=" bi bi-person-circle mx-1"></i>
-                                    </span>
-                                      <span class="fs-5 fw-semibold text-dark mx-1 p-0">
-                                        Taylor Swift
-                                        <i class="color bi bi-patch-check-fill"></i>
-                                         <p class="fs-6 fw-normal text-secondary">@TaylorSwift</p>
-                                      </span>
+                        <div class="tohover mb-2">
+                            <div>
+                            <div class="d-flex flex-row align-items-center justify-content-between">
+                                <div class="d-flex align-items-center mx-3">
+                                <div class="pro align-items-center">
+                                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRKzv2-Ax2MpmBnu7Ic1WWjdYRiS2gwFdph1w&usqp=CAU" alt="profile" class="image-thumbnail">
                                 </div>
+                                <div class=" align-items-center mx-2">
+                                    <span class="fs-5 fw-semibold">Taylor Swift<i class="color bi bi-patch-check-fill"></i></span>
+                                    <p class="fs-6 text-secondary">@TaylorSwift</p>
+                                </div>
+                            </div>
                                 <div class="bttn ">
                                     <button type="button" class="btn btn-dark rounded-pill mx-3 fs-5 fw-bold">Follow</button>
                                 </div>
                             </div>
                         </div>
-    
-                        <div class="tohover">
-                            <div class="d-flex align-items-center justify-content-between">
-                            
-                                <div class="profile d-flex align-items-center">
-                                    <span class="">
-                                        <i class="bi bi-person-circle mx-1"></i>
-                                    </span>
-                                      <span class="fs-5 fw-semibold text-dark mx-1 p-0">
-                                        Alfonso Neil
-                                        <i class="color bi bi-patch-check-fill"></i>
-                                         <p class="fs-6 fw-normal text-secondary">@FonnieN</p>
-                                      </span>
+                        </div>
+
+                        <div class="tohover mb-2">
+                            <div>
+                            <div class="d-flex flex-row align-items-center justify-content-between">
+                                <div class="d-flex align-items-center mx-3">
+                                <div class="pro align-items-center">
+                                    <img src="data:image/jpeg;base64,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" alt="profile" class="image-thumbnail">
                                 </div>
+                                <div class=" align-items-center mx-2">
+                                    <span class="fs-5 fw-semibold">Drake<i class="color bi bi-patch-check-fill"></i></span>
+                                    <p class="fs-6 text-secondary">@DrakeOfficial</p>
+                                </div>
+                            </div>
                                 <div class="bttn ">
                                     <button type="button" class="btn btn-dark rounded-pill mx-3 fs-5 fw-bold">Follow</button>
                                 </div>
                             </div>
                         </div>
-    
-                        <div class="tohover">
-                            <div class="d-flex align-items-center justify-content-between">
-                            
-                                <div class="profile d-flex align-items-center">
-                                    <span class="">
-                                        <i class="bi bi-person-circle mx-1"></i>
-                                    </span>
-                                      <span class="fs-5 fw-semibold text-dark mx-1 p-0">
-                                        Kehlani
-                                        <i class="color bi bi-patch-check-fill"></i>
-                                         <p class="fs-6 fw-normal text-secondary">@KehlaniOfficial</p>
-                                      </span>
+                        </div>
+
+                        <div class="tohover mb-2">
+                            <div>
+                            <div class="d-flex flex-row align-items-center justify-content-between">
+                                <div class="d-flex align-items-center mx-3">
+                                <div class="pro align-items-center">
+                                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQBKwZILHnqf0wjdhwDpLWhHxcPPzmeWH9MBw&usqp=CAU" alt="profile" class="image-thumbnail">
                                 </div>
+                                <div class=" align-items-center mx-2">
+                                    <span class="fs-5 fw-semibold">Chris Brown<i class="color bi bi-patch-check-fill"></i></span>
+                                    <p class="fs-6 text-secondary">@ChrisBrownOfficial</p>
+                                </div>
+                            </div>
                                 <div class="bttn ">
                                     <button type="button" class="btn btn-dark rounded-pill mx-3 fs-5 fw-bold">Follow</button>
                                 </div>
                             </div>
                         </div>
+                        </div>
+
+                        
                     </div>
                         
 <!-- FOOTER SECTION -->

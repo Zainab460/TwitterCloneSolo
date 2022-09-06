@@ -18,11 +18,17 @@ body {
 }
 /* SIDEBAR */
 .sidebar {
-    width: 480px;
+    width: 475px;
     cursor: pointer;
     position: sticky;
     top: 0; 
     padding-left: 50px;
+}
+.p-acc >img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    
 }
 .color {
     color:rgb(29, 155, 240);
@@ -59,7 +65,7 @@ body {
         
 }
 .spacing {
-    padding-top: 120px;
+    padding-top: 100px;
 
 }
 .spacing :hover {
@@ -112,7 +118,10 @@ border-radius: 30px;
     
 
 }
-.pro {
+.pro img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
     cursor: pointer;
 }
 /* NAVBAR */
@@ -219,13 +228,15 @@ h6 {
     border-radius: 20px;
 }
 .profile {
-    font-size: 60px;
     cursor: pointer;
 }
 .tohover :hover{
     background-color: lightgrey;
-    border-radius: 20px;
+    border-radius: 30px;
+    cursor: pointer;
 }
+
+
 
 /* FOOTER SECTION */
 footer >a :hover{
