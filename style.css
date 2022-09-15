@@ -194,7 +194,7 @@ border-radius: 50%;
 
 
 /* POSTS */
-.POSTS:hover{
+.posts:hover{
     cursor: pointer;
     background-color:#eff3f4;
 }
@@ -214,34 +214,77 @@ border-radius: 50%;
     border: 1px solid lightgrey;
     border-radius: 30px;
 }
+.picture {
+    padding-right: 15px;
+}
 
+/* PICTURE FOOTER */
 .footer {
     cursor: pointer;
 }
-.one :hover{
-    color:  rgb(145, 221, 221);
-    background-color: rgb(242, 247, 247);
-    border-radius: 30px;
+.footer svg {
+    width:17px;
+    height:17px;
+}
+.fool-once {
+    padding: 5px 8px;
+    padding-bottom: 7px;
+}
+.one span {
+    font-size: 14px;
+
 }
 
-.two :hover{
-    color:  rgb(160, 221, 145);
-    background-color: rgb(228, 245, 224);
-    border-radius: 30px;
+/* HOVER ICON */
+.footer .one:nth-child(1):hover .fool-once {
+background-color:rgb(218, 226, 247);
+border-radius: 50%;
+
 }
 
-.three :hover{
-    color:  rgb(221, 145, 198);
-    background-color: rgb(247, 224, 241);
-    border-radius: 30px;
+.footer .one:nth-child(2):hover .fool-once {
+    background-color:rgb(197, 241, 204);
+    border-radius: 50%;
 }
 
-.four :hover{
-    color:  rgb(141, 221, 221);
-    background-color: rgb(212, 247, 247);
-    border-radius: 30px;
+.footer .one:nth-child(3):hover .fool-once {
+    background-color:rgb(247, 215, 236);
+    border-radius: 50%;
 }
 
+.footer .one:nth-child(4):hover .fool-once {
+    background-color:rgb(218, 226, 247);
+    border-radius: 50%;
+}
+/* HOVER NUMBER */
+.footer .one:nth-child(1):hover span {
+    background-color: #eff3f4;
+    color:rgb(167, 211, 245);
+}
+.footer .one:nth-child(2):hover span {
+    background-color: #eff3f4;
+    color:rgb(82, 163, 116);
+}
+.footer .one:nth-child(3):hover span {
+    background-color: #eff3f4;
+    color:rgb(247, 146, 208);
+}
+/* HOVER SVG COLOR */
+.footer .one:nth-child(1):hover .fool-once path {
+    fill:rgb(145, 221, 221);
+}
+
+.footer .one:nth-child(2):hover .fool-once path {
+    fill:rgb(82, 163, 116);
+}
+
+.footer .one:nth-child(3):hover .fool-once path {
+    fill:rgb(247, 146, 208);
+}
+
+.footer .one:nth-child(4):hover .fool-once path {
+    fill:rgb(167, 211, 245);
+}
 
 /* TRENDS SEARCHBAR */
 
