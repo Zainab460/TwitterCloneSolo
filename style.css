@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Mouse+Memoirs&family=Open+Sans:ital,wght@0,300;1,300&family=Roboto:ital,wght@0,100;0,300;0,400;1,100;1,300;1,700&display=swap');
 
 body {
-    font-family: 'Open Sans', sans-serif;
+    font-family: Arial, sans-serif;
     height: 100vh;
     width:100vw;
     overflow-x: hidden;
@@ -76,6 +76,9 @@ svg {
     padding:3px 0 8px 9px;
     
  }
+.bird {
+    padding: 10px 12px;
+}
  .dotty {
     background-color: rgb(29, 155, 240);
     border-radius: 9999px;
@@ -142,6 +145,7 @@ svg {
 
 .work {
     color:rgb(29, 155, 240);
+    margin-right: 5px;
 }
 .work svg {
     width: 20px;
@@ -156,7 +160,7 @@ background-color: rgb(237, 244, 248);
 border-radius: 50%;
 }
 .work span {
-    padding: 6px 6px;
+    padding: 8px 8px;
 }
 .faded svg {
     opacity: 50%;
@@ -194,6 +198,9 @@ border-radius: 50%;
 
 
 /* POSTS */
+.posts {
+    padding: 5px;
+}
 .posts:hover{
     cursor: pointer;
     background-color:#eff3f4;
@@ -205,6 +212,11 @@ border-radius: 50%;
     background-color:  rgb(212, 232, 245);
     color:  rgb(29, 155, 240);
     border-radius: 50%;
+    
+}
+.blue-hover >i {
+    color: rgb(138, 134, 134);
+    
 }
 .dots {
     padding: 6px 10px;
@@ -221,6 +233,7 @@ border-radius: 50%;
 /* PICTURE FOOTER */
 .footer {
     cursor: pointer;
+    margin-right: 60px;
 }
 .footer svg {
     width:17px;
@@ -288,8 +301,6 @@ border-radius: 50%;
 
 /* TRENDS SEARCHBAR */
 
-
-
 .white {
     position: sticky;
     top: 0;
@@ -297,37 +308,50 @@ border-radius: 50%;
     padding-bottom: 1px;
 }
 form input {
+    font-size: 15px;
     outline: none;
 }
 .search{
     border-radius: 30px;
-    background-color: #eff3f4;
-    width: 400px;
+    background-color:rgb(247 249 249);
+    width: 350px;
+    height: 45px;
     
 }
-
-
-.search >input {
-    background-color:  #eff3f4;
+form{
+    margin-top: 2px;
+    margin-bottom: 16px;
 }
-h6 {
-    color: rgb(83 100 113); 
+form button {
+    background-color: rgb(247 249 249);
+}
+.search >input {
+    background-color: rgb(247 249 249);
+}
+.heading {
+    padding:10px 16px 8px 16px;
+    font-size: 19px;
+    font-weight: 900;
 }
 
 .greyout{
-    border: 1px solid #eff3f4;
-    background-color: #eff3f4;
+    border: 1px solid rgb(247 249 249);
+    background-color: rgb(247 249 249);
     border-radius: 20px;
     
     
    
 
 }
-.wordstogether :hover {
-    background-color:lightgrey;
-    border-radius:10px;
+.words-together :hover {
+    background-color:rgb(243, 241, 241);
+    border-radius:1px;
+}
+.trends-sugg {
+    padding: 10px 16px;
 }
 .font {
+    margin: 0;
     font-size: 13px;
 }
 
@@ -335,19 +359,45 @@ h6 {
     cursor: pointer;
     
 }
+.trends-hover :hover{
+    background-color:  rgb(212, 232, 245);
+    color:  rgb(29, 155, 240);
+    border-radius: 50%;
+}
+.sml-dots >i {
+    padding: 6px 6px;
+    font-size: 17px;
+    color: grey;
+}
 
 /* WHO TO FOLLOW */
 .grey {
-    background-color:#eff3f4;
+    background-color: rgb(247 249 249);
     border-radius: 20px;
 }
 .profile {
     cursor: pointer;
 }
 .tohover :hover{
-    background-color: lightgrey;
-    border-radius: 30px;
+    background-color:rgb(243, 241, 241);
+    border-radius: 1px;
     cursor: pointer;
+}
+.follow-img img {
+    width:53px ;
+    height:53px ;
+    border-radius: 30px;
+
+}
+.follow-img img:hover{
+    background-color:rgb(243, 241, 241) ;
+    border-radius: 30px;
+}
+.bttn :hover {
+    background-color: black;
+}
+.follow-words {
+    font-size: 15px;
 }
 
 
@@ -361,7 +411,7 @@ footer >a :hover{
 }
 
 .trends{
-    width: 400px;
+    width: 360px;
     height: 100vh;
    
 }
